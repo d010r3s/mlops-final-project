@@ -30,6 +30,9 @@ ClickHouse (хранение результатов)
 > поддержки работы службы поддержки и маркетинга;
 > аналитики пользовательского мнения на основе больших массивов текстовых данных.
 ```
+## one-pager
+<img width="595" height="842" alt="A4 - 1" src="https://github.com/user-attachments/assets/5d4364e4-8015-4e84-acc6-29d44fa93413" />
+## полная презентация
 <img width="1920" height="1080" alt="43" src="https://github.com/user-attachments/assets/b90b6049-12c2-4bd8-983e-d5fb698989e1" />
 <img width="1920" height="1080" alt="45" src="https://github.com/user-attachments/assets/5fa426d0-e4b0-4a20-ad08-10839cac074f" />
 <img width="1920" height="1080" alt="51" src="https://github.com/user-attachments/assets/6c32b4b2-7ea2-4184-939c-f9bc02502395" />
