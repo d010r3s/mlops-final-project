@@ -11,7 +11,7 @@ docker compose up -d --build
 - ClickHouse HTTP ping: http://localhost:8123/ping
 - 
 Архитектура:
-
+```
 Пользователь
      ↓
 Streamlit (UI)
@@ -19,3 +19,4 @@ Streamlit (UI)
 ML-сервис (модель тональности)
      ↓
 ClickHouse (хранение результатов)
+```
