@@ -1,0 +1,9 @@
+name: sentiment_dbt
+version: "1.0.0"
+config-version: 2
+
+profile: sentiment_dbt
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
