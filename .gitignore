@@ -1,0 +1,101 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# =========================
+# Jupyter / IPython
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+.streamlit/*.log
+
+# =========================
+# Datasets / Data
+# =========================
+data/
+*.csv
+*.parquet
+*.json
+*.pkl
+
+# =========================
+# ML artifacts
+# =========================
+models/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.onnx
+*.ckpt
+
+# =========================
+# Hugging Face cache
+# =========================
+.cache/
+huggingface/
+hf_cache/
+**/.cache/huggingface/
+
+# =========================
+# Docker
+# =========================
+*.log
+docker-compose.override.yml
+
+# =========================
+# Grafana
+# =========================
+grafana/data/
+grafana/plugins/
+
+# =========================
+# ClickHouse
+# =========================
+clickhouse/data/
+clickhouse/logs/
+
+# =========================
+# Kafka / Zookeeper
+# =========================
+kafka/data/
+zookeeper/data/
+
+# =========================
+# OS / IDE
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# Archives
+# =========================
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# =========================
+# Misc
+# =========================
+nohup.out
