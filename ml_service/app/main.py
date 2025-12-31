@@ -18,11 +18,6 @@ id2label = None
 
 def _load() -> None:
     global tokenizer, model, id2label
-
-    # Tokenizer might be missing in some repos. We use a robust fallback:
-    # 1) try tokenizer from MODEL_NAME
-    # 2) try tokenizer from base SBERT (if MODEL_NAME is missing tokenizer files)
-    # 3) finally fall back to a known russian SBERT tokenizer
     try:
         tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, use_fast=True)
     except Exception:
@@ -48,7 +43,6 @@ def _load() -> None:
 
     cfg = getattr(model, "config", None)
     id2label = getattr(cfg, "id2label", None) or {0: "NEGATIVE", 1: "NEUTRAL", 2: "POSITIVE"}
-    # Normalize labels to a stable set used by the UI (negative/neutral/positive)
     def _normalize_label(lbl: str) -> str:
         s = str(lbl).strip().lower()
         if "neg" in s:
@@ -59,7 +53,6 @@ def _load() -> None:
             return "neutral"
         return s or "unknown"
 
-    # id2label keys can be strings in some configs
     _tmp = {}
     for k, v in dict(id2label).items():
         try:
